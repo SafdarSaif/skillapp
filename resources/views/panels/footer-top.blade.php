@@ -39,4 +39,4 @@
 <script src="{{asset('assets/js/typeahead-search/typeahead-custom.js')}}" ></script>
 <script src="{{asset('assets/js/dashboard/dashboard_2.js')}}" ></script>
 <script src="{{asset('assets/js/script.js')}}" ></script>
-<script src="{{asset('assets/js/theme-customizer/customizer.js">  </script>
+<script src="{{asset('assets/js/theme-customizer/customizer.js')}}">  </script>
