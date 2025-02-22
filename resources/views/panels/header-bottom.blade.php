@@ -1,10 +1,10 @@
 </head>
-
 <body>
-    <div id="preloader">
-        <div class="sk-three-bounce">
-            <div class="sk-child sk-bounce1"></div>
-            <div class="sk-child sk-bounce2"></div>
-            <div class="sk-child sk-bounce3"></div>
-        </div>
-    </div>
+  <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+  <div class="loader-wrapper">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"> </div>
+    <div class="dot"></div>
+  </div>
