@@ -2,9 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Auth\LoginController;
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,8 +16,25 @@ use App\Http\Controllers\Auth\LoginController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+// Route::middleware([
+//     'auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified',
+// ])->group(function () {
+//     Route::get('/dashboard', function () {
+//         return view('dashboard');
+//     })->name('dashboard');
+// });
+
+// Route::view('/home', 'content.home')->name('home');
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', function () {
     return view('content.login');
+    // return view('welcome');
 });
 
 // Route::middleware([
@@ -40,6 +54,7 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('content.home');
+        return view('dashboard');
     })->name('dashboard');
 });
 
@@ -55,4 +70,5 @@ Route::middleware([
 // });
 
 Route::view('/home', 'content.home')->name('home');
-Route::view('/login', 'content.login')->name('login');
+// Route::view('/login', 'content.login')->name('login');
+Route::view('/home', 'content.home')->name('home');
